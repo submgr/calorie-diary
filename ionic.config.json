@@ -1,0 +1,7 @@
+{
+  "name": "Calorie Diary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

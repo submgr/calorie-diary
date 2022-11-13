@@ -66,6 +66,18 @@
     },
     mounted(){
       this.pageJob();
+      setInterval(() => {
+        if(!localStorage.getItem("temp_updateMarker") || (localStorage.getItem("temp_updateMarker") != "0" && localStorage.getItem("temp_updateMarker") != "1")){
+          localStorage.setItem("temp_updateMarker", "0")
+        }else{
+          if(localStorage.getItem("temp_updateMarker") == "0"){
+            //nothing to do
+          }else if(localStorage.getItem("temp_updateMarker") == "1"){
+            localStorage.setItem("temp_updateMarker", "0")
+            this.pageJob();
+          }
+        }
+      }, 150);
     },
     data(){
         return {

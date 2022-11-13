@@ -57,6 +57,8 @@
         });
         localStorage.setItem(this.localstorage_datacode + "", JSON.stringify(this.data_list_final))
         console.log("After update...", this.data_list_final)
+        this.serviceJob_loadDataList()
+        localStorage.setItem("temp_updateMarker", "1")
       },
       serviceJob_loadDataList(){
         var userdata = JSON.parse(localStorage.getItem("local_userdata"))

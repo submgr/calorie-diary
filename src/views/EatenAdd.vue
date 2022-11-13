@@ -90,8 +90,9 @@
                         <i> (на {{addEatenPortionSize}} грамм)</i></ion-label>
                     <div style="margin-top: 3vh;"></div>
                     <ion-label style="white-space: pre-wrap;"><b>Употребленная порция</b> <i>(в граммах)</i></ion-label>
-                    <ion-item fill="solid" class="md ionitem_margin">
-                        <ion-input v-model="addEatenPortionSize" type="number" min="0" placeholder="в граммах"></ion-input>
+                    <ion-item class="custom_input lower_top_margin">
+                      <ion-label>Белки</ion-label>
+                      <ion-input v-model="addEatenPortionSize" type="number" min="0" placeholder="в граммах"></ion-input>
                     </ion-item>
                     <div style="margin-top: 4vh;"></div>
                     <ion-label style="white-space: pre-wrap;"><b>Время</b></ion-label>
@@ -109,6 +110,18 @@
 
   <style scoped>
 
+.lower_top_margin{
+  margin-top: 0vh;
+}
+
+.custom_input{
+  border-radius: 15px;
+  margin-top: 3vh;
+}
+
+.custom_input ion-input{
+  height: 8vh;
+}
   .datetime_rounded{
     border-radius: 20px;
   }

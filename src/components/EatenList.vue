@@ -3,7 +3,7 @@
       <div v-if="data_list_final.length == 0">
         <div style="margin-top: 10vh"></div>
         <strong>Пока пусто!</strong>
-        <p>Пора начать этот прекрасный день,<br/><a target="_blank" rel="noopener noreferrer" href="#">начните с первого съеденного продукта,</a><br/>для добавления используйте "+"</p>
+        <p>Пора начать этот прекрасный день,<br/><a href="#">начните с первого съеденного продукта,</a><br/>для добавления используйте "+"</p>
       </div>
       <div v-if="data_list_final.length > 0" style="margin-top: 0vh !important;">
         <strong>Сегодня вы съели...</strong>

@@ -1,16 +1,1 @@
-<svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_110_575)">
-<circle cx="56" cy="56" r="49" fill="black" fill-opacity="0.71"/>
-<circle cx="56" cy="56" r="52.5" stroke="#D7FC70" stroke-width="7"/>
-</g>
-<path d="M60.6513 46.1304L71.0208 56.5L60.6513 66.8696" stroke="#D7FC70" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M41.9792 56.5H70.7304" stroke="#D7FC70" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<filter id="filter0_b_110_575" x="-21" y="-21" width="154" height="154" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="10.5"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_110_575"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_110_575" result="shape"/>
-</filter>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" fill="none" viewBox="0 0 112 112"><g filter="url(#filter0_b_110_575)"><circle cx="56" cy="56" r="49" fill="#000" fill-opacity=".71"/><circle cx="56" cy="56" r="52.5" stroke="#D7FC70" stroke-width="7"/></g><path stroke="#D7FC70" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M60.6513 46.1304L71.0208 56.5L60.6513 66.8696"/><path stroke="#D7FC70" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M41.9792 56.5H70.7304"/><defs><filter id="filter0_b_110_575" width="154" height="154" x="-21" y="-21" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="10.5"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_110_575"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur_110_575" mode="normal" result="shape"/></filter></defs></svg>

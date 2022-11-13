@@ -1,6 +1,7 @@
 <template>
     <div id="container">
       <div v-if="data_list_final.length == 0">
+        <div style="margin-top: 10vh"></div>
         <strong>Пока пусто!</strong>
         <p>Пора начать этот прекрасный день,<br/><a target="_blank" rel="noopener noreferrer" href="#">начните с первого съеденного продукта,</a><br/>для добавления используйте "+"</p>
       </div>

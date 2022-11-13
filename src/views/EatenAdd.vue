@@ -76,8 +76,8 @@
                 @willDismiss="Modal_onWillDismiss"
                 :is-open="modalState == 'confirmEatenAdd'"
                 trigger="open-modal"
-                :initial-breakpoint="0.85"
-                :breakpoints="[0, 0.85]"
+                :initial-breakpoint="0.95"
+                :breakpoints="[0, 0.85, 0.95]"
                 handle-behavior="cycle"
         >
             <ion-content class="ion-padding">

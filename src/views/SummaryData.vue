@@ -41,14 +41,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSegment } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSegment, IonSegmentButton } from '@ionic/vue';
 //yimport ExploreContainer from '@/components/ExploreContainer.vue';
 
 import VueApexCharts from "vue3-apexcharts";
 
 export default defineComponent({
   name: 'Tab3Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonSegment,
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonSegment, IonSegmentButton,
     apexchart: VueApexCharts },
   data: function() {
     return {

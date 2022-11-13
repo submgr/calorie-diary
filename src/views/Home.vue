@@ -91,6 +91,10 @@
             this.$router.push('eatenAdd')
         },
         pageJob(){
+          this.thisday_calories = 0;
+          this.thisday_proteins = 0;
+          this.thisday_fats = 0;
+          this.thisday_carbohydrates = 0;
           this.userdata = JSON.parse(localStorage.getItem("local_userdata"))
           console.log(this.userdata)
           const d = new Date();

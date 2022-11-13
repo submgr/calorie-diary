@@ -75,10 +75,6 @@
       <ion-modal
                 @willDismiss="Modal_onWillDismiss"
                 :is-open="modalState == 'confirmEatenAdd'"
-                trigger="open-modal"
-                :initial-breakpoint="0.95"
-                :breakpoints="[0, 0.85, 0.95]"
-                handle-behavior="cycle"
         >
             <ion-content class="ion-padding">
                 <div class="ion-margin-top">
@@ -91,7 +87,7 @@
                     <div style="margin-top: 3vh;"></div>
                     <ion-label style="white-space: pre-wrap;"><b>Употребленная порция</b> <i>(в граммах)</i></ion-label>
                     <ion-item class="custom_input lower_top_margin">
-                      <ion-label>Белки</ion-label>
+                      <ion-label>Размер порции</ion-label>
                       <ion-input v-model="addEatenPortionSize" type="number" min="0" placeholder="в граммах"></ion-input>
                     </ion-item>
                     <div style="margin-top: 4vh;"></div>
@@ -101,6 +97,7 @@
                     </ion-datetime>
 
                     <ion-button @click="completeAdd" style="margin-top: 3vh;" class="btn_tinypadding" color="tertiary" expand="block">Добавить</ion-button>
+                    <ion-button @click="Modal_onWillDismiss" style="margin-top: 1vh;" class="btn_tinypadding" color="danger" expand="block">Назад</ion-button>
                 </div>
             </ion-content>
             

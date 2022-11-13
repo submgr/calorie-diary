@@ -16,6 +16,10 @@ const routes: Array<RouteRecordRaw> = [
         redirect: '/tabs/main'
       },
       {
+        path: 'main',
+        component: () => import('@/views/MainScreen.vue')
+      },
+      {
         path: 'hello',
         component: () => import('@/views/AppOnboarding.vue')
       },

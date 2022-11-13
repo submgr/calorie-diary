@@ -1,0 +1,18 @@
+[
+    {
+        "code": "milk",
+        "friendly_name": "Молоко",
+        "calories": "1000",
+        "proteins": "13",
+        "fats": "14",
+        "carbohydrates": "15"
+    },
+    {
+        "code": "chips",
+        "friendly_name": "Чипсы",
+        "calories": "1000",
+        "proteins": "23",
+        "fats": "24",
+        "carbohydrates": "25"
+    }
+]

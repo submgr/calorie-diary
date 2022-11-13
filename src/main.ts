@@ -20,12 +20,16 @@ import '@ionic/vue/css/text-transformation.css';
 import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
+import 'vant/lib/index.css';
+
 /* Theme variables */
 import './theme/variables.css';
 
+import 'vue-virtual-scroller/dist/vue-virtual-scroller.css';
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
   
 router.isReady().then(() => {
   app.mount('#app');

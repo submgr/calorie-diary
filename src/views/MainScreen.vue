@@ -27,7 +27,7 @@
       if(localStorage.getItem("local_userdata")){
         this.$router.replace('home')
       }else{
-        this.$router.replace('setupProfile')
+        this.$router.replace('hello')
       }
       
     }

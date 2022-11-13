@@ -45,7 +45,7 @@
                 
         </div>
         <div v-if="currentListView == 'local'">     
-            <DynamicScroller v-if="local_items"
+            <DynamicScroller v-if="local_items.length > 0"
                 style="margin-top: 3vh"
                 :items="local_items"
                 :min-item-size="100"
@@ -67,7 +67,7 @@
                 </DynamicScrollerItem>
                 </template>
             </DynamicScroller>
-            <div v-if="!local_items" style="margin-left: 3vw; margin-top: 5vh;">
+            <div v-if="local_items.length == 0" style="margin-left: 3vw; margin-top: 5vh;">
                 <span>Вы еще не добавляли продукты в свой личный список для быстрого ввода.</span>
             </div>
         </div>

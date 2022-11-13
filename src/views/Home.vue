@@ -20,15 +20,15 @@
 
         <ion-card color="medium">
             <ion-card-header>
-            <ion-card-title>{{thisday_calories}}/{{Math.round(userdata.metric_bmr)}} kcal</ion-card-title>
+            <ion-card-title>{{thisday_calories}}/{{Math.round(userdata.metric_tdee)}} kcal</ion-card-title>
             <ion-card-subtitle>восполнено за день</ion-card-subtitle>
             </ion-card-header>
 
             <ion-card-content>
-            Сегодня вы выполнили цель на {{Math.round(100 / userdata.metric_bmr * thisday_calories)}}% для калорий.<br/><br/>
-            Белки: {{thisday_proteins}}/{{Math.round(userdata.metric_bmr * 0.0455)}} грамм<br/>
-            Жиры: {{thisday_fats}}/{{Math.round(userdata.metric_bmr * 0.0325)}} грамм<br/>
-            Углеводы: {{thisday_carbohydrates}}/{{Math.round(userdata.metric_bmr * 0.1355)}} грамм
+            Сегодня вы выполнили цель на {{Math.round(100 / userdata.metric_tdee * thisday_calories)}}% для калорий.<br/><br/>
+            Белки: {{thisday_proteins}}/{{Math.round(userdata.metric_tdee * 0.0455)}} грамм<br/>
+            Жиры: {{thisday_fats}}/{{Math.round(userdata.metric_tdee * 0.0325)}} грамм<br/>
+            Углеводы: {{thisday_carbohydrates}}/{{Math.round(userdata.metric_tdee * 0.1355)}} грамм
             </ion-card-content>
         </ion-card>
 

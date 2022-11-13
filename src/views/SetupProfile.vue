@@ -316,6 +316,7 @@ export default  defineComponent({
       this.metric_tdee = Math.round(metric_tdee);
 
       questions['metric_bmr'] = metric_bmr;
+      questions['metric_tdee'] = metric_tdee;
       
       this.quiz_questions_holdvar = JSON.stringify(questions)
   

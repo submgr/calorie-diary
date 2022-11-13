@@ -65,29 +65,7 @@
       return { add, list }
     },
     mounted(){
-      this.userdata = JSON.parse(localStorage.getItem("local_userdata"))
-      console.log(this.userdata)
-      const d = new Date();
-      const thisday = `eatinghistory_${d.getFullYear()}_${d.getMonth()}_${d.getDate()}`;
-      this.localstorage_datacode = thisday;
-      if(!localStorage.getItem(thisday)){
-        localStorage.setItem(thisday, JSON.stringify([]))
-      }
-      this.todays_history = JSON.parse(localStorage.getItem(thisday))
-      console.log(this.todays_history)
-
-      for(var i = 0; i < this.todays_history.length; i++){
-        this.thisday_calories += this.todays_history[i].calories;
-        this.thisday_proteins += this.todays_history[i].proteins;
-        this.thisday_fats += this.todays_history[i].fats;
-        this.thisday_carbohydrates += this.todays_history[i].carbohydrates;
-      }
-
-      const tabsEl = document.querySelector('ion-tab-bar');
-      if (tabsEl) {
-        tabsEl.hidden = false;
-        tabsEl.style.height = "1";
-      }
+      this.pageJob();
     },
     data(){
         return {
@@ -101,11 +79,41 @@
             localstorage_datacode: ""
         }
     },
+    watch: {
+      '$route' () {
+        this.pageJob();
+      }
+    },
     methods: {
         add_eaten(){
             //alert("Got it.")
             //this.modal_state = "addElementModalActive"
             this.$router.push('eatenAdd')
+        },
+        pageJob(){
+          this.userdata = JSON.parse(localStorage.getItem("local_userdata"))
+          console.log(this.userdata)
+          const d = new Date();
+          const thisday = `eatinghistory_${d.getFullYear()}_${d.getMonth()}_${d.getDate()}`;
+          this.localstorage_datacode = thisday;
+          if(!localStorage.getItem(thisday)){
+            localStorage.setItem(thisday, JSON.stringify([]))
+          }
+          this.todays_history = JSON.parse(localStorage.getItem(thisday))
+          console.log(this.todays_history)
+
+          for(var i = 0; i < this.todays_history.length; i++){
+            this.thisday_calories += this.todays_history[i].calories;
+            this.thisday_proteins += this.todays_history[i].proteins;
+            this.thisday_fats += this.todays_history[i].fats;
+            this.thisday_carbohydrates += this.todays_history[i].carbohydrates;
+          }
+
+          const tabsEl = document.querySelector('ion-tab-bar');
+          if (tabsEl) {
+            tabsEl.hidden = false;
+            tabsEl.style.height = "1";
+          }
         }
     }
   });

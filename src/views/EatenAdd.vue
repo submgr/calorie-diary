@@ -185,6 +185,11 @@
         local_items: JSON.parse(localStorage.getItem("local_productsbase"))
       }
     },
+    watch: {
+      '$route' () {
+        this.local_items = JSON.parse(localStorage.getItem("local_productsbase"))
+      }
+    },
     setup(){
         return{
             ellipseOutline

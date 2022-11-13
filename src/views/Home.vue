@@ -51,7 +51,7 @@
   
   <script lang="ts">
   import { defineComponent, ref } from 'vue';
-  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonFab, IonFabButton, IonIcon, IonCard } from '@ionic/vue';
+  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonFab, IonFabButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent } from '@ionic/vue';
   //import FillingBox from '@/components/FillingBox.vue';
   import EatenList from '@/components/EatenList.vue';
 
@@ -59,7 +59,7 @@
   
   export default defineComponent({
     name: 'Tab2Page',
-    components: { EatenList, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonFab, IonFabButton, IonIcon, IonCard },
+    components: { EatenList, IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonFab, IonFabButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent },
     setup() {
       const list = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
       return { add, list }

@@ -217,6 +217,8 @@ export default defineComponent({
         localStorage.setItem("local_productsbase", JSON.stringify(local_productsbase))
 
         this.modalState = "not"
+
+        this.local_items = JSON.parse(localStorage.getItem("local_productsbase"))
       }
     }
 });

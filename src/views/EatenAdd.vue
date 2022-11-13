@@ -82,7 +82,7 @@
         >
             <ion-content class="ion-padding">
                 <div class="ion-margin-top">
-                    <ion-label style="white-space: pre-wrap;"><b>Добавляем "{{temp_eatenelement_data.friendly_name}}" в сегодняшнюю историю?</b><br>
+                    <ion-label style="white-space: pre-wrap;"><br/><b>Добавляем "{{temp_eatenelement_data.friendly_name}}" в сегодняшнюю историю?</b><br>
                         <br/>   Калории: {{Math.round(temp_eatenelement_data.calories / 100 * addEatenPortionSize)}}
                         <br>    Белки: {{Math.round(temp_eatenelement_data.proteins / 100 * addEatenPortionSize)}}
                         <br>    Жиры: {{Math.round(temp_eatenelement_data.fats / 100 * addEatenPortionSize)}}

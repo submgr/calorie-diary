@@ -38,6 +38,11 @@ export default defineComponent({
         IonPage
     },
     mounted() {
+        const tabsEl = document.querySelector('ion-tab-bar');
+        if (tabsEl) {
+            tabsEl.hidden = false;
+            tabsEl.style.height = "1";
+        }
         if (localStorage.getItem("local_userdata")) {
             this.$router.replace('home')
         } else {

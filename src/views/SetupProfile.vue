@@ -30,7 +30,7 @@
                 <h1 class="quiz_upperh1"><i>{{metric_tdee}}</i> <span class="quiz_upperspan"><i>kcal/день</i></span></h1>
               </div>
               
-              <router-link to="/tabs/home" @click="save_state">
+              <router-link to="/tabs/main" @click="save_state">
                 <ion-button color="tertiary" expand="block">Продолжить</ion-button>
               </router-link>
               

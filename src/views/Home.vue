@@ -110,6 +110,13 @@ export default defineComponent({
             tabsEl.hidden = false;
             tabsEl.style.height = "1";
         }
+        setTimeout(() => {
+            const tabsEl = document.querySelector('ion-tab-bar');
+            if (tabsEl) {
+                tabsEl.hidden = false;
+                tabsEl.style.height = "1";
+            }
+        }, 500);
         this.pageJob();
         setInterval(() => {
             if (!localStorage.getItem("temp_updateMarker") || (localStorage.getItem("temp_updateMarker") != "0" && localStorage.getItem("temp_updateMarker") != "1")) {

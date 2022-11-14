@@ -38,12 +38,14 @@ export default defineComponent({
         IonPage
     },
     mounted() {
-        const tabsEl = document.querySelector('ion-tab-bar');
-        if (tabsEl) {
-            tabsEl.hidden = false;
-            tabsEl.style.height = "1";
-        }
         if (localStorage.getItem("local_userdata")) {
+            setTimeout(() => {
+            const tabsEl = document.querySelector('ion-tab-bar');
+            if (tabsEl) {
+                tabsEl.hidden = false;
+                tabsEl.style.height = "1";
+            }
+        }, 500);
             this.$router.replace('home')
         } else {
             this.$router.replace('hello')

@@ -141,7 +141,7 @@ export default defineComponent({
         SwiperSlide
     },
     props: ['someFunctionParent'],
-    updated() {
+    mounted() {
         const tabsEl = document.querySelector('ion-tab-bar');
         if (tabsEl) {
             tabsEl.hidden = true;

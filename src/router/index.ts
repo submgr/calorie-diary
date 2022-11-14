@@ -17,27 +17,33 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'main',
-        component: () => import('@/views/MainScreen.vue')
+        component: () => import('@/views/MainScreen.vue'),
+        meta: { transition: 'slide-right' },
       },
       {
         path: 'hello',
-        component: () => import('@/views/AppOnboarding.vue')
+        component: () => import('@/views/AppOnboarding.vue'),
+        meta: { transition: 'slide-right' },
       },
       {
         path: 'setupProfile',
-        component: () => import('@/views/SetupProfile.vue')
+        component: () => import('@/views/SetupProfile.vue'),
+        meta: { transition: 'slide-left' },
       },
       {
         path: 'home',
-        component: () => import('@/views/Home.vue')
+        component: () => import('@/views/Home.vue'),
+        meta: { transition: 'slide-right' },
       },
       {
         path: 'eatenAdd',
-        component: () => import('@/views/EatenAdd.vue')
+        component: () => import('@/views/EatenAdd.vue'),
+        meta: { transition: 'slide-right' },
       },
       {
         path: 'ownFoodList',
-        component: () => import('@/views/OwnFoodList.vue')
+        component: () => import('@/views/OwnFoodList.vue'),
+        meta: { transition: 'slide-right' },
       },
       {
         path: 'summaryData',

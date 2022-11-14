@@ -27,6 +27,8 @@ import './theme/variables.css';
 
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css';
 
+import 'v-calendar/dist/style.css';
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router)

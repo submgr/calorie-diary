@@ -24,7 +24,6 @@
           <DynamicScroller v-if="local_items"
                 :items="local_items"
                 :min-item-size="100"
-                gridItems=2
                 class="scroller" keyField="code"
             >
                 <template v-slot="{ item, index, active }">
@@ -32,7 +31,6 @@
                     :item="item"
                     :min-item-size="500"
                     :active="active"
-                    :gridItems="2"
                     :data-index="index"
                 >
                 <ion-item>
@@ -140,7 +138,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonModal, IonLabel, IonInput } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonModal, IonLabel, IonInput, IonIcon, IonFab, IonFabButton, IonList, IonButton, IonCol, IonGrid, IonItem, IonRow } from '@ionic/vue';
 
 import items from "../assets/data/food.json";
 
@@ -152,7 +150,7 @@ import { add } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'Tab2Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, DynamicScroller, DynamicScrollerItem, IonModal, IonLabel, IonInput },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, DynamicScroller, DynamicScrollerItem, IonIcon, IonFab, IonList, IonButton, IonCol, IonGrid, IonItem, IonRow, IonFabButton, IonModal, IonLabel, IonInput },
   data () {
       return {
         local_items: JSON.parse(localStorage.getItem("local_productsbase")),

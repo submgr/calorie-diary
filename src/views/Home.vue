@@ -51,7 +51,7 @@
   
   <script lang="ts">
   import { defineComponent, ref } from 'vue';
-  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonFab, IonFabButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent } from '@ionic/vue';
+  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonFab, IonFabButton, IonIcon, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent} from '@ionic/vue';
   //import FillingBox from '@/components/FillingBox.vue';
   import EatenList from '@/components/EatenList.vue';
 
